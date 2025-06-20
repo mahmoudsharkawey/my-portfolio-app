@@ -1,3 +1,33 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Modern card hover and glassmorphism */
+.card-modern {
+  @apply bg-white/70 dark:bg-neutral-900/70 backdrop-blur-lg shadow-xl border border-primary-200 dark:border-primary-700 rounded-2xl transition-transform duration-300 hover:scale-105 hover:shadow-2xl;
+}
+
+/* Fade-in-up animation for scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.arrow-nav-btn {
+  @apply w-14 h-14 flex items-center justify-center rounded-full bg-white/60 dark:bg-neutral-900/60 shadow-xl border border-primary-200 dark:border-primary-700 text-primary-600 dark:text-primary-300 disabled:opacity-40 disabled:cursor-not-allowed transition-all duration-300 backdrop-blur-lg;
+  box-shadow: 0 4px 24px 0 rgba(80, 80, 200, 0.10);
+}
+.arrow-nav-btn:hover:not(:disabled), .arrow-nav-btn:focus-visible:not(:disabled) {
+  @apply scale-110 ring-2 ring-primary-300 ring-offset-2;
+  box-shadow: 0 8px 32px 0 rgba(80, 80, 200, 0.18), 0 0 0 4px rgba(124, 58, 237, 0.15);
+  background: linear-gradient(135deg, #ede9fe 60%, #c7d2fe 100%);
+}

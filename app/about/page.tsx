@@ -23,69 +23,69 @@ export default function AboutPage() {
       </div>
 
       <div className="text-default-700 text-base leading-relaxed">
-        <p className="mt-2 text-lg text-default-600 font-medium my-2">
-          Web Developer & Designer
-        </p>
+        <h2 className="text-2xl font-semibold mb-3 text-primary-500 my-4">Summary</h2>
         <p>
-          I&apos;m a passionate developer with a love for building beautiful,
-          performant web applications. I enjoy working with modern technologies
-          and turning ideas into reality. My focus is on creating user-centric,
-          accessible, and delightful digital experiences.
+          Frontend Engineer with expertise in React, Next.js, and TypeScript. Skilled in building high performance, scalable web applications with a focus on user experience, performance optimization, and secure API integration. Strong problem-solving and collaboration skills. Seeking a challenging role to leverage my frontend development skills and contribute to impactful projects.
         </p>
       </div>
 
       <div>
-        <h2 className="text-2xl font-semibold mb-3 text-primary-500 my-4">
-          Skills
-        </h2>
+        <h2 className="text-2xl font-semibold mb-3 text-primary-500 my-4">Technical Skills</h2>
         <ul className="flex flex-wrap gap-3">
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            React
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            Next.js
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            TypeScript
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            Tailwind CSS
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            Node.js
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            Express
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            MongoDB
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            PostgreSQL
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            Docker
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            Git
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            GitHub
-          </li>
-          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">
-            UI/UX Design
-          </li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">React.js</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">Next.js</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">Redux</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">React Query</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">Tailwind</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">JavaScript</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">TypeScript</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">Java</li>
+          <li className="bg-primary-100 text-primary-700 px-4 py-2 rounded-full font-medium">Git & GitHub</li>
+        </ul>
+        <h2 className="text-2xl font-semibold mb-3 text-primary-500 my-4">Soft Skills</h2>
+        <ul className="list-disc ml-6">
+          <li>Strong communication</li>
+          <li>Problem-solving</li>
+          <li>Teamwork abilities</li>
+        </ul>
+        <h2 className="text-2xl font-semibold mb-3 text-primary-500 my-4">Conceptual Knowledge</h2>
+        <ul className="list-disc ml-6">
+          <li>Object-Oriented Programming (OOP)</li>
+          <li>Data Structures</li>
+          <li>Algorithms</li>
+          <li>Computer Networks</li>
         </ul>
       </div>
 
       <div>
-        <h2 className="text-2xl font-semibold mb-3 text-primary-500">
-          Interests
-        </h2>
-        <p className="text-default-700">
-          Open source, design systems, accessibility, learning new tech, and
-          collaborating with creative people.
-        </p>
+        <h2 className="text-2xl font-semibold mb-3 text-primary-500 my-4">Work Experience</h2>
+        <div className="mb-4">
+          <h3 className="font-bold">Frontend Engineer, InnovateX Solution (Part-Time)</h3>
+          <span className="italic">Oct 2024 - Nov 2024</span>
+          <ul className="list-disc ml-6">
+            <li>Collaborated with 4+ cross-functional teams to design and implement 10+ engaging features and modules, significantly enhancing user interaction and satisfaction.</li>
+            <li>Architected and managed a scalable, resilient application infrastructure using React.js, Next.js, and TypeScript, resulting in a 30% improvement in performance and reliability.</li>
+            <li>Developed 3+ Proof of Concepts (POCs) to explore and integrate new technologies such as React Query and Tailwind CSS, driving the app&apos;s functionality forward and adapting to evolving user needs.</li>
+            <li>Evaluated and selected technology options (Redux, API integration, etc.) based on specific use cases, ensuring alignment with the app&apos;s mission and long-term product roadmap.</li>
+          </ul>
+        </div>
+        <div>
+          <h3 className="font-bold">MERN stack Intern, Wxora Company</h3>
+          <span className="italic">Aug 2023 – Oct 2023</span>
+          <ul className="list-disc ml-6">
+            <li>Coordinated project tasks for a team of 5, ensuring 100% adherence to engineering standards and regulations using the MERN stack (MongoDB, Express.js, React.js, Node.js).</li>
+            <li>Conducted comprehensive project analyses, identifying and rectifying 15+ discrepancies in engineering designs, which improved project quality and delivery timelines.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div>
+        <h2 className="text-2xl font-semibold mb-3 text-primary-500 my-4">Education</h2>
+        <div className="mb-2">
+          <h3 className="font-bold">Arab Open University</h3>
+          <span className="italic">Bachelor of Computer Science (GPA: 3.3 / 4.0)</span>
+          <div>Sep 2022 - Sep 2026</div>
+        </div>
       </div>
     </section>
   );

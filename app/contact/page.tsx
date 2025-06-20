@@ -16,7 +16,7 @@ export default function ContactPage() {
         </span>
         <div className="flex gap-4 text-2xl mt-1">
           <a
-            href="mailto:your@email.com"
+            href="mailto:mahmood.sharkawey@gmail.com"
             className="hover:text-primary-500 transition-colors"
             aria-label="Email"
             target="_blank"
@@ -25,7 +25,7 @@ export default function ContactPage() {
             <FaEnvelope />
           </a>
           <a
-            href="https://github.com/your-github"
+            href="https://github.com/mahmoudsharkawey"
             className="hover:text-primary-500 transition-colors"
             aria-label="GitHub"
             target="_blank"
@@ -34,7 +34,7 @@ export default function ContactPage() {
             <FaGithub />
           </a>
           <a
-            href="https://linkedin.com/in/your-linkedin"
+            href="https://linkedin.com/in/mahmoud-gamal-elsharkawey"
             className="hover:text-primary-500 transition-colors"
             aria-label="LinkedIn"
             target="_blank"
