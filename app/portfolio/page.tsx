@@ -19,6 +19,7 @@ export default function PortfolioPage() {
   const [loading, setLoading] = useState(true);
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
   const [isOpen, setIsOpen] = useState(false);
+  const [descExpanded, setDescExpanded] = useState(false);
 
   useEffect(() => {
     fetch("/api/projects")
@@ -44,6 +45,7 @@ export default function PortfolioPage() {
   const closeModal = () => {
     setIsOpen(false);
     setSelectedProject(null);
+    setDescExpanded(false);
   };
 
   const containerVariants = {
@@ -176,11 +178,19 @@ export default function PortfolioPage() {
               <ModalBody>
                 {selectedProject && (
                   <>
-                    <p className="mb-4 text-gray-700 dark:text-gray-200 text-lg">
-                      {selectedProject.description.length > 300
-                        ? selectedProject.description.slice(0, 300) + "..."
-                        : selectedProject.description}
-                    </p>
+                    <div className="mb-4 text-gray-700 dark:text-gray-200 text-lg relative">
+                      <p className={descExpanded ? undefined : "line-clamp-2"}>
+                        {selectedProject.description}
+                      </p>
+                      {selectedProject.description.length > 60 && (
+                        <button
+                          className="text-primary-600 dark:text-primary-400 font-semibold ml-1 focus:outline-none underline text-sm"
+                          onClick={() => setDescExpanded((prev) => !prev)}
+                        >
+                          {descExpanded ? "Show less" : "Show more"}
+                        </button>
+                      )}
+                    </div>
                     <div className="flex flex-wrap gap-2 mb-2">
                       {selectedProject.technologies.map((tech) => (
                         <Chip

@@ -18,7 +18,8 @@ import NextLink from "next/link";
 import clsx from "clsx";
 import { useRouter } from "next/navigation";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid";
-import { FaLinkedin } from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 import { siteConfig } from "@/config/site";
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -89,7 +90,11 @@ export const Navbar = () => {
             <Link isExternal aria-label="Github" href={siteConfig.links.github}>
               <GithubIcon className="text-default-500 hover:text-primary-500 transition-colors duration-200" />
             </Link>
-            <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
+            <Link
+              isExternal
+              aria-label="LinkedIn"
+              href={siteConfig.links.linkedin}
+            >
               <FaLinkedin className="w-6 h-6 text-default-500 hover:text-primary-500 transition-colors duration-200" />
             </Link>
           </NavbarItem>
@@ -105,25 +110,30 @@ export const Navbar = () => {
         </NavbarContent>
 
         <NavbarMenu>
-          {/* {searchInput} */}
-          <div className="mx-4 mt-2 flex flex-col gap-2">
+          <div className="flex flex-col items-center justify-start min-h-[60vh] gap-4 text-center mt-12">
             {siteConfig.navMenuItems.map((item, index) => (
               <NavbarMenuItem key={`${item}-${index}`}>
                 <Link
-                  color={
-                    index === 2
-                      ? "primary"
-                      : index === siteConfig.navMenuItems.length - 1
-                        ? "danger"
-                        : "foreground"
-                  }
+                  color="foreground"
                   href={item.href}
                   size="lg"
+                  className="transition-colors duration-200 hover:text-primary-500 px-4 py-2 font-semibold text-2xl"
                 >
                   {item.label}
                 </Link>
               </NavbarMenuItem>
             ))}
+            <div className="flex flex-row items-center justify-center gap-6 mt-10">
+              <Link isExternal aria-label="Github" href={siteConfig.links.github}>
+                <GithubIcon className="w-7 h-7 text-default-500 hover:text-primary-500 transition-colors duration-200" />
+              </Link>
+              <Link isExternal aria-label="LinkedIn" href={siteConfig.links.linkedin}>
+                <FaLinkedin className="w-7 h-7 text-default-500 hover:text-primary-500 transition-colors duration-200" />
+              </Link>
+              <Link isExternal aria-label="Email" href="mailto:your@email.com">
+                <FiMail className="w-7 h-7 text-default-500 hover:text-primary-500 transition-colors duration-200" />
+              </Link>
+            </div>
           </div>
         </NavbarMenu>
       </HeroUINavbar>
